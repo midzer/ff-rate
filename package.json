@@ -1,0 +1,12 @@
+{
+  "name": "ff-rate",
+  "version": "0.0.1",
+  "description": "rate fire fighter content",
+  "dependencies": {
+    "express": "^4.14.0",
+    "ws": "^3.0.0"
+  },
+  "devDependencies": {
+    "lowdb": "^1.0.0"
+  }
+}
