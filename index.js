@@ -1,10 +1,7 @@
 var fs = require('fs');
 var app = require('express')();
-var https        = require('https');
-var server = https.createServer({ 
-                key: fs.readFileSync('/home/ffw/.config/letsencrypt/live/feuerwehr-eisolzried.de/privkey.pem'),
-                cert: fs.readFileSync('/home/ffw/.config/letsencrypt/live/feuerwehr-eisolzried.de/fullchain.pem')
-},app);
+var http = require('http');
+var server = http.createServer(app);
 
 var WebSocket = require('ws');
 var wss = new WebSocket.Server({ server });
@@ -74,4 +71,3 @@ wss.on('connection', function(socket) {
 server.listen(63244, function() {
   console.log('listening on *:63244');
 });
-
