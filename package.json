@@ -4,7 +4,7 @@
   "description": "rate fire fighter content",
   "dependencies": {
     "express": "^4.17.1",
-    "ws": "^3.3.3"
+    "ws": "^7.2.0"
   },
   "devDependencies": {
     "lowdb": "^1.0.0"
